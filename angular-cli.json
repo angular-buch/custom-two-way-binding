@@ -1,7 +1,7 @@
 {
   "project": {
     "version": "1.0.0-beta.24",
-    "name": "foobar"
+    "name": "custom-two-way-binding"
   },
   "apps": [
     {
