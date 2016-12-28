@@ -10,15 +10,15 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./sub.component.css']
 })
 export class SubComponent {
-  value: string;
+  myBindingValue: string;
 
-  @Output() myBindingChange = new EventEmitter<any>();
+  @Output() myBindingChange = new EventEmitter<string>();
   @Input() get myBinding() {
-    return this.value;
+    return this.myBindingValue;
   }
 
   set myBinding(v: string) {
-    this.value = v;
-    this.myBindingChange.emit(this.value);
+    this.myBindingValue = v;
+    this.myBindingChange.emit(this.myBindingValue);
   }
 }
