@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'my-sub',
+  selector: 'app-sub',
   template: `
     <p>SubComponent: {{ value }}</p>
     <button (click)="myBinding = 'CCC'">CCC</button>
