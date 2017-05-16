@@ -3,11 +3,15 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'my-root',
   template: `
-    <p>AppComponent: {{ foobar }}</p>
-    <button (click)="foobar = 'AAA'">AAA</button>
-    <button (click)="foobar = 'BBB'">BBB</button>
+    <div class="container">
+      <div class="row">
+        <p>AppComponent: {{ foobar }}</p>
+        <button (click)="foobar = 'AAA'" class="btn btn-default">AAA</button>
+        <button (click)="foobar = 'BBB'" class="btn btn-default">BBB</button>
 
-    <my-sub [(myBinding)]="foobar"></my-sub>
+        <my-sub [(myBinding)]="foobar"></my-sub>
+      </div>
+    </div>
   `
 })
 export class AppComponent {
