@@ -1,9 +1,9 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-sub',
+  selector: 'my-sub',
   template: `
-    <p>SubComponent: {{ value }}</p>
+    <p>SubComponent: {{ myBinding }}</p>
     <button (click)="myBinding = 'CCC'">CCC</button>
     <button (click)="myBinding = 'DDD'">DDD</button>
   `,

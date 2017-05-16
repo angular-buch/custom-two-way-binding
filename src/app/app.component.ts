@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'my-root',
   template: `
-    <p>MyComponent: {{ foobar }}</p>
+    <p>AppComponent: {{ foobar }}</p>
     <button (click)="foobar = 'AAA'">AAA</button>
     <button (click)="foobar = 'BBB'">BBB</button>
 
